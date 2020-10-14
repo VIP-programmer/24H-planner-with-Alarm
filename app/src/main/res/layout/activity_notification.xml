@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Notification">
+
+    <TextView
+        android:id="@+id/doneTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:textColor="@android:color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Task name"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/doneTask"
+        android:text="is done"/>
+
+    <ImageView
+        android:id="@+id/imageOfNotif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/bg_holder"
+        />
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/imageOfNotif"
+        >
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            />
+        <android.widget.Button
+            android:id="@+id/showAct"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Show Me"
+            android:textSize="20dp"
+            android:textColor="@android:color/black"
+            android:layout_weight=".4"
+            android:background="@drawable/add_button_shape"
+            android:backgroundTint="@color/brown_dark"
+            android:layout_marginRight="5dp"
+            />
+        <android.widget.Button
+            android:id="@+id/cool"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Cool"
+            android:textSize="20dp"
+            android:textColor="@android:color/black"
+            android:layout_weight=".4"
+            android:background="@drawable/cancel_button_shape"
+            android:backgroundTint="@color/green_dark"
+            android:layout_marginLeft="5dp"
+            />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

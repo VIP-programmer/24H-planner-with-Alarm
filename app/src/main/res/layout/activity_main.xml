@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".randomTasks.MainActivity">
+
+    <TextView
+        android:id="@+id/title_template"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My tasks for today"
+        app:layout_anchor="@id/task_list"
+        app:layout_anchorGravity="center_horizontal"
+        android:textSize="40sp"
+        android:fontFamily="@font/title_with_extra"
+        android:layout_marginTop="20dp"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/task_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:paddingTop="70dp"
+        />
+    <ImageView
+        android:id="@+id/bg_holder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bg_holder2"
+        android:layout_gravity="center"
+        />
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottom_app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:backgroundTint="@android:color/white"
+        app:fabAlignmentMode="end"
+        app:fabCradleRoundedCornerRadius="15dp"
+        app:hideOnScroll="true"
+        app:menu="@menu/buttom_menu"
+        app:layout_scrollFlags="scroll|enterAlways"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/cardview_light_background"
+        android:src="@drawable/plus"
+        app:tint="@null"
+        app:layout_anchor="@id/bottom_app_bar"/>
+
+    <ImageView
+        android:id="@+id/to_day_plan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/to_calander"
+        android:layout_gravity="center_vertical"
+        android:elevation="10dp"
+        />
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adMainBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111"
+        />
+    <!-- ca-app-pub-7832644521881287/1000302509 -->
+
+    <include layout="@layout/add_task_sheet" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2196F3</color>
+    <color name="colorPrimaryDark">#1976D2</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <!--Task's color for day-->
+    <color name="nearBlue_light">#1a237e</color>
+    <color name="blue_light">#01579b</color>
+    <color name="trial_light">#009688</color>
+    <color name="trial_dark">#00695c</color>
+    <color name="green_light">#2e7d32</color>
+    <color name="green_dark">#4caf50</color>
+    <color name="brown_light">#5d4037</color>
+    <color name="brown_dark">#8d6e63</color>
+    <color name="red_light">#b71c1c</color>
+    <color name="red_dark">#d50000</color>
+    <color name="orange_light">#bf360c</color>
+    <color name="orange_dark">#ff5722</color>
+    <color name="purpl_light">#6a1b9a</color>
+    <color name="purpl_dark">#ab47bc</color>
+    <color name="pink_light">#c2185b</color>
+    <color name="pink_dark">#e91e63</color>
+    <color name="default_task_color">#D4DADE</color>
+    <color name="about_to_start">#F39C12</color>
+    <color name="started">#2ECC71</color>
+    <color name="done">#2980B9</color>
+</resources>

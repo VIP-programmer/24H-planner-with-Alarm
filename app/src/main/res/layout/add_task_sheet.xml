@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/add_dialog_shape"
+    app:behavior_peekHeight="0dp"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+    android:padding="10dp"
+    android:id="@+id/bottom_sheet"
+    android:elevation="50dp"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Customize your task"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:layout_marginVertical="10dp"
+        android:textColor="@android:color/black"
+        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginBottom="10dp"
+                />
+            <LinearLayout
+                android:id="@+id/SliderDots"
+                android:orientation="horizontal"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/task_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginHorizontal="30dp"
+                android:paddingHorizontal="15dp"
+                android:layout_marginVertical="10dp"
+                android:maxLength="20"
+                android:singleLine="true"
+                android:hint="task name"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/input_shape"
+                />
+
+            <!-- time picker -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!-- for hours -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Hours"
+                        android:textSize="11sp" />
+                    <NumberPicker
+                        android:id="@+id/pickerHours"
+                        android:layout_width="wrap_content"
+                        android:layout_height="120dp"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingTop="15.5dp"
+                    android:text=":"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!-- for hours -->
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="11sp"
+                        android:text="Minutes"/>
+                    <NumberPicker
+                        android:id="@+id/pickerMinutes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="120dp"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingTop="15.5dp"
+                    android:text=":"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!-- for seconds -->
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="11sp"
+                        android:text="Seconds"/>
+                    <NumberPicker
+                        android:id="@+id/pickerSeconds"
+                        android:layout_width="wrap_content"
+                        android:layout_height="120dp"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginVertical="10dp"
+                >
+                <android.widget.Button
+                    android:id="@+id/valide"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/add_button_shape"
+                    android:text="add"
+                    android:textColor="@android:color/white"
+                    android:layout_marginRight="5dp"
+                    />
+                <android.widget.Button
+                    android:id="@+id/cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/cancel_button_shape"
+                    android:layout_marginLeft="5dp"
+                    android:text="cancel"
+                    android:textColor="@android:color/white"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

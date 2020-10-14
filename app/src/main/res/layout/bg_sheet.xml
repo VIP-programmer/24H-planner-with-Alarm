@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/add_dialog_shape"
+    app:behavior_peekHeight="0dp"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+    android:padding="10dp"
+    android:id="@+id/bg_sheet"
+    android:elevation="50dp"
+    android:backgroundTint="@color/default_task_color"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Customize your backgrounds"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:layout_marginVertical="10dp"
+        android:textColor="@android:color/black"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/bgs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginVertical="10dp"
+        >
+        <android.widget.Button
+            android:id="@+id/addBG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/add_button_shape"
+            android:text="add"
+            android:textSize="18dp"
+            android:textColor="@android:color/white"
+            android:layout_marginRight="5dp"
+            />
+        <android.widget.Button
+            android:id="@+id/valideBG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cancel_button_shape"
+            android:layout_marginLeft="5dp"
+            android:text="OK"
+            android:textSize="18dp"
+            android:textColor="@android:color/white"
+            />
+    </LinearLayout>
+
+</LinearLayout>

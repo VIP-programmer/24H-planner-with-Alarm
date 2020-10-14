@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Settings">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:orientation="vertical"
+            >
+            <android.widget.Button
+                android:id="@+id/choseTune"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Chose tune"
+                android:textSize="17dp"
+                android:textAllCaps="false"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                />
+            <android.widget.Button
+                android:id="@+id/choseBg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Chose background"
+                android:textSize="17dp"
+                android:textAllCaps="false"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            />
+
+    </LinearLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adSetting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-7832644521881287/4353224152"
+        />
+    <!-- ca-app-pub-7832644521881287/4353224152 -->
+    <!-- ca-app-pub-3940256099942544/6300978111 #test-->
+    <include layout="@layout/tune_sheet" />
+    <include layout="@layout/bg_sheet" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

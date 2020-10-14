@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:id="@+id/notif_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight=".75"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/notif_task_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:textColor="@android:color/black"
+            android:text="Task A"
+            android:layout_marginTop="5dp"
+            />
+
+        <TextView
+            android:id="@+id/notif_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="@android:color/black"
+            android:text="is about to start"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/notif_actions"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight=".25"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        >
+
+        <android.widget.Button
+            android:id="@+id/notif_show"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:text="show me"
+            android:textSize="17dp"
+            android:textColor="@android:color/black"
+            android:background="@drawable/notif_button_shape"
+            />
+
+        <android.widget.Button
+            android:id="@+id/notif_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:text="cancel"
+            android:textSize="17dp"
+            android:textColor="@android:color/black"
+            android:background="@drawable/notif_button_shape"
+            />
+    </LinearLayout>
+</LinearLayout>

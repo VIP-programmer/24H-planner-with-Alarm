@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/add_dialog_shape"
+    app:behavior_peekHeight="0dp"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+    android:padding="10dp"
+    android:id="@+id/tune_sheet"
+    android:elevation="50dp"
+    android:backgroundTint="@color/default_task_color"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chose Tune"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:layout_marginVertical="10dp"
+        android:textColor="@android:color/black"
+        />
+    <RadioGroup
+        android:id="@+id/tuneGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        >
+        <RadioButton
+            android:id="@+id/tune1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tune 01"
+            android:textSize="17sp"
+            />
+        <RadioButton
+            android:id="@+id/tune2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tune 02"
+            android:textSize="17sp"
+            />
+        <RadioButton
+            android:id="@+id/tune3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tune 03"
+            android:textSize="17sp"
+            />
+        <RadioButton
+            android:id="@+id/tune4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tune 04"
+            android:textSize="17sp"
+            />
+        <RadioButton
+            android:id="@+id/tune5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tune 05"
+            android:textSize="17sp"
+            />
+        <RadioButton
+            android:id="@+id/tune6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tune 06"
+            android:textSize="17sp"
+            />
+        <RadioButton
+            android:id="@+id/tune7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tune 07"
+            android:textSize="18sp"
+            />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginVertical="10dp"
+        >
+        <android.widget.Button
+            android:id="@+id/valideTune"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/add_button_shape"
+            android:text="OK"
+            android:textSize="18dp"
+            android:textColor="@android:color/white"
+            android:layout_marginRight="5dp"
+            />
+        <android.widget.Button
+            android:id="@+id/cancelTune"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cancel_button_shape"
+            android:layout_marginLeft="5dp"
+            android:text="cancel"
+            android:textSize="18dp"
+            android:textColor="@android:color/white"
+            />
+    </LinearLayout>
+
+</LinearLayout>

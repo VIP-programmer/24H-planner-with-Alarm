@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Focus</string>
+    <string name="taskName"><b>Task</b></string>
+    <string name="percent"><b>99%</b></string>
+    <string name="timeADay"><i>23H 59min 59s</i></string>
+    <string name="start">Start</string>
+    <string name="title_activity_welcome">Welcome</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="third_fragment_label">Third Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="hello_third_fragment">Hello third fragment. Arg: %1$s</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_text_3">Tab 2</string>
+
+    <string name="hello_user">Thanks for downloading our app :)</string>
+    <string name="description">Basically <b>24H planner with Alarm</b> separated in tow parts:</string>
+    <string name="stPart">First part allows you to start random tasks and the app will follow the progress of each one and notify you when time is up</string>
+    <string name="ndPart">Second part organize your daily tasks and notify you when you should start one of your tasks, and at the end of each task</string>
+    <string name="rdpart"><i>This is initial version we are preparing more futures, enjoy !</i></string>
+    <string name="suppIntro">We had to integrate some ads inside the app so we can grow a bit and add more futures.</string>
+    <string name="suppBef">if we found good support form <b><u>Donation</u></b> we will remove ads next updates</string>
+
+</resources>
